@@ -14,6 +14,9 @@ Prerequisites: gcc, g++, clang, clang++, make.
 
 This project uses the 'picobenchmark' microbenchmarking library, which is included as single-header in the repo.
 
+NOTE: _Although a C++ library is used to abstract away the microbenchmarking logic, the actual implementations are written in C and compiled with a C compiler.
+As such they should match how the resulting assembly would look if they were to be compiled as part of the Erlang Runtime System._
+
 After cloning the repository, run `make` to create four executables:
 - clangO3
 - clangO2
