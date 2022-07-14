@@ -1,0 +1,5 @@
+clangO3
+clangO2
+gccO3
+gccO2
+*.o
