@@ -4,7 +4,7 @@
 #define min(a, b) ((a) < (b) ? a : b)
 #define Uint uint64_t
 
-Uint *original_map_get(Uint *keys, Uint *vals, Uint key, Uint max_size) {
+Uint *original_flatmap_get(Uint *keys, Uint *vals, Uint key, Uint max_size) {
   Uint n = max_size;
   Uint i;
 

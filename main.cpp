@@ -4,15 +4,14 @@
 
 #define Uint uint64_t
 
-typedef Uint *(*function_under_test_t)(Uint *, Uint *, Uint, Uint);
+using function_under_test = Uint *(Uint *, Uint *, Uint, Uint);
 
 #define foo_ptr ()
 
-extern Uint *original_map_get(Uint *keys, Uint *vals, Uint key, Uint max_size);
-extern Uint *latereturn_map_get(Uint *keys, Uint *vals, Uint key,
-                                Uint max_size);
-extern Uint *vectoradd_map_get(Uint *keys, Uint *vals, Uint key, Uint max_size);
-extern Uint *vectoror_map_get(Uint *keys, Uint *vals, Uint key, Uint max_size);
+Uint *original_flatmap_get(Uint *keys, Uint *vals, Uint key, Uint max_size);
+Uint *latereturn_flatmap_get(Uint *keys, Uint *vals, Uint key, Uint max_size);
+Uint *vectoradd_flatmap_get(Uint *keys, Uint *vals, Uint key, Uint max_size);
+Uint *vectoror_flatmap_get(Uint *keys, Uint *vals, Uint key, Uint max_size);
 
 static Uint keys[] = {0,  1,  2,  3,  4,  5,  6,  7,  8,  9,  10,
                       11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
@@ -22,14 +21,13 @@ static Uint vals[] = {0,  1,  2,  3,  4,  5,  6,  7,  8,  9,  10,
                       11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
                       22, 23, 24, 25, 26, 27, 28, 29, 30, 31};
 
-template <function_under_test_t FUT>
-static void benchmark(picobench::state &s) {
+template <function_under_test FUT> static void b(picobench::state &s) {
   std::random_device rd{};
   auto gen = std::mt19937{rd()};
   auto distr = std::uniform_int_distribution<>(0, 31);
   s.start_timer();
   for (Uint tuple_size = 0; tuple_size < 32; ++tuple_size) {
-    for (auto _ : s) {
+    for (int i = 0; i < s.iterations() * 1000; ++i) {
       Uint needle = distr(gen); // A random key
       FUT(keys, vals, needle, tuple_size);
     }
@@ -37,7 +35,24 @@ static void benchmark(picobench::state &s) {
   s.stop_timer();
 }
 
-PICOBENCH(benchmark<original_map_get>);
-PICOBENCH(benchmark<latereturn_map_get>);
-PICOBENCH(benchmark<vectoradd_map_get>);
-PICOBENCH(benchmark<vectoror_map_get>);
+#define min(a, b) ((a) < (b) ? a : b)
+#define Uint uint64_t
+
+PICOBENCH(b<original_flatmap_get>).iterations({1,  2,  3,  4,  5,  6,  7,  8,
+                                               9,  10, 11, 12, 13, 14, 15, 16,
+                                               17, 18, 19, 20, 21, 22, 23, 24,
+                                               25, 26, 27, 28, 29, 30, 31, 32});
+PICOBENCH(b<latereturn_flatmap_get>).iterations({1,  2,  3,  4,  5,  6,  7,
+                                                 8,  9,  10, 11, 12, 13, 14,
+                                                 15, 16, 17, 18, 19, 20, 21,
+                                                 22, 23, 24, 25, 26, 27, 28,
+                                                 29, 30, 31, 32});
+PICOBENCH(b<vectoradd_flatmap_get>).iterations({1,  2,  3,  4,  5,  6,  7,
+                                                8,  9,  10, 11, 12, 13, 14,
+                                                15, 16, 17, 18, 19, 20, 21,
+                                                22, 23, 24, 25, 26, 27, 28,
+                                                29, 30, 31, 32});
+PICOBENCH(b<vectoror_flatmap_get>).iterations({1,  2,  3,  4,  5,  6,  7,  8,
+                                               9,  10, 11, 12, 13, 14, 15, 16,
+                                               17, 18, 19, 20, 21, 22, 23, 24,
+                                               25, 26, 27, 28, 29, 30, 31, 32});
