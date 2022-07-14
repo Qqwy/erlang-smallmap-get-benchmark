@@ -1,3 +1,7 @@
+.PHONY: gccO3 gccO2 clangO3 clangO2 clean main
+
+main: gccO3 gccO2 clangO3 clangO2
+
 gccO3: *.c *.cpp
 	gcc -c -fPIC -O3 -g -Wall -Werror implementations.c
 	g++ -c -fPIC -O3 -g -Wall -Werror main.cpp
