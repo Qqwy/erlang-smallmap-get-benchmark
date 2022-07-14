@@ -54,7 +54,8 @@ GPU: Intel HD Graphics 530
 Memory: 12666MiB / 31932MiB 
 ```
 
-I have the following results:
+I have the following results. These seem to indicate that on O2, there is a potential for a 5-15% speed improvement depending on tuple size.
+On O3, clang still performs well but GCC creates an implementation which is slower.
 
 ### ClangO2
 ```
