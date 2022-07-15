@@ -43,13 +43,5 @@ const std::vector<int> iters = {1,  2,  3,  4,  5,  6,  7,  8,  9,  10, 11,
 
 PICOBENCH(b<original_flatmap_get>).iterations(iters);
 PICOBENCH(b<latereturn_flatmap_get>).iterations(iters);
-// PICOBENCH(b<vectoradd_flatmap_get>).iterations({1,  2,  3,  4,  5,  6,  7,
-//                                                 8,  9,  10, 11, 12, 13, 14,
-//                                                 15, 16, 17, 18, 19, 20, 21,
-//                                                 22, 23, 24, 25, 26, 27, 28,
-//                                                 29, 30, 31, 32});
-// PICOBENCH(b<vectoror_flatmap_get>).iterations({1,  2,  3,  4,  5,  6,  7,  8,
-//                                                9,  10, 11, 12, 13, 14, 15,
-//                                                16, 17, 18, 19, 20, 21, 22,
-//                                                23, 24, 25, 26, 27, 28, 29,
-//                                                30, 31, 32});
+// PICOBENCH(b<vectoradd_flatmap_get>).iterations(iters);
+// PICOBENCH(b<vectoror_flatmap_get>).iterations(iters);
