@@ -35,12 +35,12 @@ and cache lines will be filled with other stuff.
 
 This benchmark only tests what happens if a program does nothing else than look up many keys in tiny maps.
 
-The particular benchmark will, for each map size between 1 and 32, run 10_000 iterations in which a random key in _twice_ this range is picked.
+The particular benchmark will, for each map size between 1 and 32, run 100_000 iterations in which a random key in _twice_ this range is picked.
 This means there is a 50% chance of finding the key. **(I think this is the main point which could be considered 'artificial' about this microbenchmark (besides not running all of ERTS); 50% is an arbitrary cutoff not based on real data.)**
 
 This procedure is repeated for each of the potential map retrieval function implementations.
 
-By default, two implementations which I came up with which turn out to be quite a bit slower on my machine than the original implementation
+By default, two more implementations which I came up with which turn out to be quite a bit slower on my machine than the original implementation
 are commented in the source code (in main.cpp), but feel free to experiment.
 
 # Results
@@ -61,6 +61,9 @@ The results on my machine seem to indicate that there is a potential for a 5-15%
 Clang works well both on O2 and O3; GCC significantly better on O3.
 
 (Of course, it is possible to enable O3 only for a particular function using some GCC specific `__attribute__`s.)
+
+As we measure 10_000 iterations (to reduce the influence of measurement overhead on the benchmark), the 'Ops/second' number in the results
+should be multiplied by 100_000 to reach the real number.
 
 ## GCC
 
