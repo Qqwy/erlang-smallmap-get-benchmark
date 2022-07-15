@@ -62,8 +62,9 @@ Clang works well both on O2 and O3; GCC significantly better on O3.
 
 (Of course, it is possible to enable O3 only for a particular function using some GCC specific `__attribute__`s.)
 
-As we measure 10_000 iterations (to reduce the influence of measurement overhead on the benchmark), the 'Ops/second' number in the results
-should be multiplied by 100_000 to reach the real number.
+As we measure 100_000 iterations (to reduce the influence of measurement overhead on the benchmark), the 'Total ms' number in the results should be divided by 100_000 to find the real number.
+
+_(Note that 'ns/op' and 'Ops/second' are scaled w.r.t. `Dim` and are thus not that useful in this particular benchmark.)_
 
 ## GCC
 
