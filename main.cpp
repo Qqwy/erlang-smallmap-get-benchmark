@@ -28,11 +28,10 @@ template <function_under_test FUT> static void b(picobench::state &s) {
   auto distr = std::uniform_int_distribution<>(
       0, s.iterations() * 2 - 1); // 50% chance of missing.
   s.start_timer();
-  for (Uint tuple_size = 0; tuple_size < 32; ++tuple_size) {
-    for (int i = 0; i < 100000; ++i) {
-      Uint needle = distr(gen); // A random key
-      FUT(keys, vals, needle, tuple_size);
-    }
+  auto tuple_size = s.iterations();
+  for (int i = 0; i < 100000; ++i) {
+    Uint needle = distr(gen); // A random key
+    FUT(keys, vals, needle, tuple_size);
   }
   s.stop_timer();
 }

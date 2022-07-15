@@ -74,70 +74,70 @@ _(Note that 'ns/op' and 'Ops/second' are scaled w.r.t. `Dim` and are thus not th
 ===============================================================================
    Name (baseline is *)   |   Dim   |  Total ms |  ns/op  |Baseline| Ops/second
 ===============================================================================
-b<original_flatmap_get> * |       1 |    56.330 |56330213 |      - |       17.8
-b<latereturn_flatmap_get> |       1 |    67.031 |67030519 |  1.190 |       14.9
-b<original_flatmap_get> * |       2 |    66.513 |33256372 |      - |       30.1
-b<latereturn_flatmap_get> |       2 |    66.810 |33404941 |  1.004 |       29.9
-b<original_flatmap_get> * |       3 |    66.840 |22279963 |      - |       44.9
-b<latereturn_flatmap_get> |       3 |    69.501 |23167090 |  1.040 |       43.2
-b<original_flatmap_get> * |       4 |    70.788 |17697093 |      - |       56.5
-b<latereturn_flatmap_get> |       4 |    65.077 |16269238 |  0.919 |       61.5
-b<original_flatmap_get> * |       5 |    69.021 |13804203 |      - |       72.4
-b<latereturn_flatmap_get> |       5 |    62.058 |12411542 |  0.899 |       80.6
-b<original_flatmap_get> * |       6 |    69.249 |11541485 |      - |       86.6
-b<latereturn_flatmap_get> |       6 |    62.836 |10472715 |  0.907 |       95.5
-b<original_flatmap_get> * |       7 |    70.711 |10101516 |      - |       99.0
-b<latereturn_flatmap_get> |       7 |    61.888 | 8841206 |  0.875 |      113.1
-b<original_flatmap_get> * |       8 |    70.222 | 8777731 |      - |      113.9
-b<latereturn_flatmap_get> |       8 |    64.443 | 8055362 |  0.918 |      124.1
-b<original_flatmap_get> * |       9 |    71.687 | 7965185 |      - |      125.5
-b<latereturn_flatmap_get> |       9 |    62.844 | 6982685 |  0.877 |      143.2
-b<original_flatmap_get> * |      10 |    71.914 | 7191355 |      - |      139.1
-b<latereturn_flatmap_get> |      10 |    59.164 | 5916360 |  0.823 |      169.0
-b<original_flatmap_get> * |      11 |    70.685 | 6425896 |      - |      155.6
-b<latereturn_flatmap_get> |      11 |    62.244 | 5658549 |  0.881 |      176.7
-b<original_flatmap_get> * |      12 |    69.232 | 5769325 |      - |      173.3
-b<latereturn_flatmap_get> |      12 |    63.511 | 5292601 |  0.917 |      188.9
-b<original_flatmap_get> * |      13 |    70.657 | 5435121 |      - |      184.0
-b<latereturn_flatmap_get> |      13 |    65.040 | 5003109 |  0.921 |      199.9
-b<original_flatmap_get> * |      14 |    69.007 | 4929104 |      - |      202.9
-b<latereturn_flatmap_get> |      14 |    60.851 | 4346513 |  0.882 |      230.1
-b<original_flatmap_get> * |      15 |    69.410 | 4627304 |      - |      216.1
-b<latereturn_flatmap_get> |      15 |    61.972 | 4131452 |  0.893 |      242.0
-b<original_flatmap_get> * |      16 |    71.770 | 4485603 |      - |      222.9
-b<latereturn_flatmap_get> |      16 |    62.133 | 3883312 |  0.866 |      257.5
-b<original_flatmap_get> * |      17 |    68.661 | 4038877 |      - |      247.6
-b<latereturn_flatmap_get> |      17 |    63.869 | 3756996 |  0.930 |      266.2
-b<original_flatmap_get> * |      18 |    69.107 | 3839271 |      - |      260.5
-b<latereturn_flatmap_get> |      18 |    61.950 | 3441662 |  0.896 |      290.6
-b<original_flatmap_get> * |      19 |    71.834 | 3780747 |      - |      264.5
-b<latereturn_flatmap_get> |      19 |    62.221 | 3274801 |  0.866 |      305.4
-b<original_flatmap_get> * |      20 |    65.050 | 3252489 |      - |      307.5
-b<latereturn_flatmap_get> |      20 |    64.977 | 3248835 |  0.999 |      307.8
-b<original_flatmap_get> * |      21 |    64.724 | 3082090 |      - |      324.5
-b<latereturn_flatmap_get> |      21 |    63.161 | 3007666 |  0.976 |      332.5
-b<original_flatmap_get> * |      22 |    64.267 | 2921223 |      - |      342.3
-b<latereturn_flatmap_get> |      22 |    63.450 | 2884072 |  0.987 |      346.7
-b<original_flatmap_get> * |      23 |    63.234 | 2749287 |      - |      363.7
-b<latereturn_flatmap_get> |      23 |    59.588 | 2590785 |  0.942 |      386.0
-b<original_flatmap_get> * |      24 |    64.974 | 2707238 |      - |      369.4
-b<latereturn_flatmap_get> |      24 |    62.547 | 2606114 |  0.963 |      383.7
-b<original_flatmap_get> * |      25 |    64.244 | 2569743 |      - |      389.1
-b<latereturn_flatmap_get> |      25 |    62.408 | 2496331 |  0.971 |      400.6
-b<original_flatmap_get> * |      26 |    63.604 | 2446297 |      - |      408.8
-b<latereturn_flatmap_get> |      26 |    63.207 | 2431031 |  0.994 |      411.3
-b<original_flatmap_get> * |      27 |    62.725 | 2323159 |      - |      430.4
-b<latereturn_flatmap_get> |      27 |    62.405 | 2311307 |  0.995 |      432.7
-b<original_flatmap_get> * |      28 |    64.229 | 2293887 |      - |      435.9
-b<latereturn_flatmap_get> |      28 |    64.331 | 2297522 |  1.002 |      435.3
-b<original_flatmap_get> * |      29 |    62.591 | 2158320 |      - |      463.3
-b<latereturn_flatmap_get> |      29 |    61.013 | 2103901 |  0.975 |      475.3
-b<original_flatmap_get> * |      30 |    61.924 | 2064117 |      - |      484.5
-b<latereturn_flatmap_get> |      30 |    64.164 | 2138784 |  1.036 |      467.6
-b<original_flatmap_get> * |      31 |    63.491 | 2048098 |      - |      488.3
-b<latereturn_flatmap_get> |      31 |    65.041 | 2098103 |  1.024 |      476.6
-b<original_flatmap_get> * |      32 |    61.379 | 1918097 |      - |      521.3
-b<latereturn_flatmap_get> |      32 |    63.009 | 1969025 |  1.027 |      507.9
+b<original_flatmap_get> * |       1 |     1.689 | 1689131 |      - |      592.0
+b<latereturn_flatmap_get> |       1 |     1.106 | 1106135 |  0.655 |      904.0
+b<original_flatmap_get> * |       2 |     1.797 |  898298 |      - |     1113.2
+b<latereturn_flatmap_get> |       2 |     1.191 |  595597 |  0.663 |     1679.0
+b<original_flatmap_get> * |       3 |     1.789 |  596290 |      - |     1677.0
+b<latereturn_flatmap_get> |       3 |     1.480 |  493478 |  0.828 |     2026.4
+b<original_flatmap_get> * |       4 |     1.813 |  453264 |      - |     2206.2
+b<latereturn_flatmap_get> |       4 |     1.311 |  327748 |  0.723 |     3051.1
+b<original_flatmap_get> * |       5 |     1.915 |  382933 |      - |     2611.4
+b<latereturn_flatmap_get> |       5 |     1.406 |  281262 |  0.734 |     3555.4
+b<original_flatmap_get> * |       6 |     1.983 |  330420 |      - |     3026.4
+b<latereturn_flatmap_get> |       6 |     1.655 |  275865 |  0.835 |     3625.0
+b<original_flatmap_get> * |       7 |     1.878 |  268281 |      - |     3727.4
+b<latereturn_flatmap_get> |       7 |     1.559 |  222707 |  0.830 |     4490.2
+b<original_flatmap_get> * |       8 |     1.896 |  237058 |      - |     4218.4
+b<latereturn_flatmap_get> |       8 |     1.472 |  183972 |  0.776 |     5435.6
+b<original_flatmap_get> * |       9 |     2.051 |  227845 |      - |     4388.9
+b<latereturn_flatmap_get> |       9 |     1.649 |  183200 |  0.804 |     5458.5
+b<original_flatmap_get> * |      10 |     2.126 |  212558 |      - |     4704.6
+b<latereturn_flatmap_get> |      10 |     1.806 |  180586 |  0.850 |     5537.5
+b<original_flatmap_get> * |      11 |     2.040 |  185489 |      - |     5391.1
+b<latereturn_flatmap_get> |      11 |     1.622 |  147463 |  0.795 |     6781.3
+b<original_flatmap_get> * |      12 |     2.026 |  168798 |      - |     5924.2
+b<latereturn_flatmap_get> |      12 |     1.752 |  145978 |  0.865 |     6850.3
+b<original_flatmap_get> * |      13 |     2.140 |  164610 |      - |     6075.0
+b<latereturn_flatmap_get> |      13 |     1.945 |  149646 |  0.909 |     6682.4
+b<original_flatmap_get> * |      14 |     2.265 |  161760 |      - |     6182.0
+b<latereturn_flatmap_get> |      14 |     2.019 |  144224 |  0.892 |     6933.6
+b<original_flatmap_get> * |      15 |     2.372 |  158143 |      - |     6323.4
+b<latereturn_flatmap_get> |      15 |     1.977 |  131791 |  0.833 |     7587.7
+b<original_flatmap_get> * |      16 |     2.164 |  135246 |      - |     7393.9
+b<latereturn_flatmap_get> |      16 |     2.128 |  133000 |  0.983 |     7518.8
+b<original_flatmap_get> * |      17 |     2.316 |  136239 |      - |     7340.0
+b<latereturn_flatmap_get> |      17 |     1.882 |  110684 |  0.812 |     9034.7
+b<original_flatmap_get> * |      18 |     2.219 |  123303 |      - |     8110.1
+b<latereturn_flatmap_get> |      18 |     2.083 |  115701 |  0.938 |     8643.0
+b<original_flatmap_get> * |      19 |     2.262 |  119044 |      - |     8400.2
+b<latereturn_flatmap_get> |      19 |     2.471 |  130047 |  1.092 |     7689.5
+b<original_flatmap_get> * |      20 |     2.190 |  109504 |      - |     9132.1
+b<latereturn_flatmap_get> |      20 |     2.067 |  103361 |  0.944 |     9674.8
+b<original_flatmap_get> * |      21 |     2.396 |  114074 |      - |     8766.2
+b<latereturn_flatmap_get> |      21 |     2.469 |  117560 |  1.031 |     8506.3
+b<original_flatmap_get> * |      22 |     2.227 |  101243 |      - |     9877.2
+b<latereturn_flatmap_get> |      22 |     2.054 |   93361 |  0.922 |    10711.0
+b<original_flatmap_get> * |      23 |     2.544 |  110596 |      - |     9041.9
+b<latereturn_flatmap_get> |      23 |     2.188 |   95111 |  0.860 |    10513.9
+b<original_flatmap_get> * |      24 |     2.304 |   96005 |      - |    10416.1
+b<latereturn_flatmap_get> |      24 |     2.574 |  107255 |  1.117 |     9323.5
+b<original_flatmap_get> * |      25 |     2.335 |   93414 |      - |    10705.0
+b<latereturn_flatmap_get> |      25 |     2.139 |   85546 |  0.916 |    11689.5
+b<original_flatmap_get> * |      26 |     2.311 |   88873 |      - |    11252.0
+b<latereturn_flatmap_get> |      26 |     2.191 |   84263 |  0.948 |    11867.5
+b<original_flatmap_get> * |      27 |     2.381 |   88184 |      - |    11339.9
+b<latereturn_flatmap_get> |      27 |     2.547 |   94326 |  1.070 |    10601.5
+b<original_flatmap_get> * |      28 |     2.426 |   86652 |      - |    11540.4
+b<latereturn_flatmap_get> |      28 |     2.395 |   85539 |  0.987 |    11690.5
+b<original_flatmap_get> * |      29 |     2.937 |  101285 |      - |     9873.0
+b<latereturn_flatmap_get> |      29 |     2.259 |   77903 |  0.769 |    12836.3
+b<original_flatmap_get> * |      30 |     2.938 |   97927 |      - |    10211.7
+b<latereturn_flatmap_get> |      30 |     2.447 |   81559 |  0.833 |    12260.9
+b<original_flatmap_get> * |      31 |     3.231 |  104209 |      - |     9596.0
+b<latereturn_flatmap_get> |      31 |     2.955 |   95334 |  0.915 |    10489.4
+b<original_flatmap_get> * |      32 |     3.231 |  100983 |      - |     9902.6
+b<latereturn_flatmap_get> |      32 |     3.826 |  119560 |  1.184 |     8364.0
 ===============================================================================
 ```
 
@@ -147,217 +147,218 @@ b<latereturn_flatmap_get> |      32 |    63.009 | 1969025 |  1.027 |      507.9
 ===============================================================================
    Name (baseline is *)   |   Dim   |  Total ms |  ns/op  |Baseline| Ops/second
 ===============================================================================
-b<original_flatmap_get> * |       1 |    43.706 |43706464 |      - |       22.9
-b<latereturn_flatmap_get> |       1 |    47.763 |47762792 |  1.093 |       20.9
-b<original_flatmap_get> * |       2 |    54.303 |27151493 |      - |       36.8
-b<latereturn_flatmap_get> |       2 |    48.319 |24159732 |  0.890 |       41.4
-b<original_flatmap_get> * |       3 |    56.322 |18774151 |      - |       53.3
-b<latereturn_flatmap_get> |       3 |    49.174 |16391310 |  0.873 |       61.0
-b<original_flatmap_get> * |       4 |    57.768 |14441992 |      - |       69.2
-b<latereturn_flatmap_get> |       4 |    47.987 |11996783 |  0.831 |       83.4
-b<original_flatmap_get> * |       5 |    57.951 |11590185 |      - |       86.3
-b<latereturn_flatmap_get> |       5 |    49.611 | 9922208 |  0.856 |      100.8
-b<original_flatmap_get> * |       6 |    59.684 | 9947379 |      - |      100.5
-b<latereturn_flatmap_get> |       6 |    49.571 | 8261895 |  0.831 |      121.0
-b<original_flatmap_get> * |       7 |    60.412 | 8630263 |      - |      115.9
-b<latereturn_flatmap_get> |       7 |    48.413 | 6916105 |  0.801 |      144.6
-b<original_flatmap_get> * |       8 |    59.540 | 7442483 |      - |      134.4
-b<latereturn_flatmap_get> |       8 |    48.771 | 6096434 |  0.819 |      164.0
-b<original_flatmap_get> * |       9 |    60.208 | 6689752 |      - |      149.5
-b<latereturn_flatmap_get> |       9 |    47.981 | 5331190 |  0.797 |      187.6
-b<original_flatmap_get> * |      10 |    61.727 | 6172698 |      - |      162.0
-b<latereturn_flatmap_get> |      10 |    47.982 | 4798184 |  0.777 |      208.4
-b<original_flatmap_get> * |      11 |    62.834 | 5712154 |      - |      175.1
-b<latereturn_flatmap_get> |      11 |    48.642 | 4421982 |  0.774 |      226.1
-b<original_flatmap_get> * |      12 |    59.988 | 4998988 |      - |      200.0
-b<latereturn_flatmap_get> |      12 |    47.887 | 3990566 |  0.798 |      250.6
-b<original_flatmap_get> * |      13 |    60.325 | 4640385 |      - |      215.5
-b<latereturn_flatmap_get> |      13 |    48.302 | 3715567 |  0.801 |      269.1
-b<original_flatmap_get> * |      14 |    57.994 | 4142442 |      - |      241.4
-b<latereturn_flatmap_get> |      14 |    47.978 | 3427025 |  0.827 |      291.8
-b<original_flatmap_get> * |      15 |    56.800 | 3786640 |      - |      264.1
-b<latereturn_flatmap_get> |      15 |    47.890 | 3192653 |  0.843 |      313.2
-b<original_flatmap_get> * |      16 |    57.245 | 3577814 |      - |      279.5
-b<latereturn_flatmap_get> |      16 |    48.153 | 3009580 |  0.841 |      332.3
-b<original_flatmap_get> * |      17 |    59.262 | 3486020 |      - |      286.9
-b<latereturn_flatmap_get> |      17 |    49.476 | 2910364 |  0.835 |      343.6
-b<original_flatmap_get> * |      18 |    55.792 | 3099541 |      - |      322.6
-b<latereturn_flatmap_get> |      18 |    51.692 | 2871799 |  0.927 |      348.2
-b<original_flatmap_get> * |      19 |    54.872 | 2888008 |      - |      346.3
-b<latereturn_flatmap_get> |      19 |    51.587 | 2715094 |  0.940 |      368.3
-b<original_flatmap_get> * |      20 |    55.367 | 2768331 |      - |      361.2
-b<latereturn_flatmap_get> |      20 |    47.903 | 2395173 |  0.865 |      417.5
-b<original_flatmap_get> * |      21 |    55.052 | 2621510 |      - |      381.5
-b<latereturn_flatmap_get> |      21 |    49.416 | 2353126 |  0.898 |      425.0
-b<original_flatmap_get> * |      22 |    56.914 | 2587008 |      - |      386.5
-b<latereturn_flatmap_get> |      22 |    47.912 | 2177836 |  0.842 |      459.2
-b<original_flatmap_get> * |      23 |    53.948 | 2345567 |      - |      426.3
-b<latereturn_flatmap_get> |      23 |    48.078 | 2090336 |  0.891 |      478.4
-b<original_flatmap_get> * |      24 |    54.174 | 2257233 |      - |      443.0
-b<latereturn_flatmap_get> |      24 |    47.987 | 1999449 |  0.886 |      500.1
-b<original_flatmap_get> * |      25 |    53.506 | 2140225 |      - |      467.2
-b<latereturn_flatmap_get> |      25 |    50.877 | 2035077 |  0.951 |      491.4
-b<original_flatmap_get> * |      26 |    54.163 | 2083201 |      - |      480.0
-b<latereturn_flatmap_get> |      26 |    48.263 | 1856257 |  0.891 |      538.7
-b<original_flatmap_get> * |      27 |    52.591 | 1947797 |      - |      513.4
-b<latereturn_flatmap_get> |      27 |    50.319 | 1863648 |  0.957 |      536.6
-b<original_flatmap_get> * |      28 |    54.367 | 1941691 |      - |      515.0
-b<latereturn_flatmap_get> |      28 |    47.766 | 1705924 |  0.879 |      586.2
-b<original_flatmap_get> * |      29 |    51.557 | 1777824 |      - |      562.5
-b<latereturn_flatmap_get> |      29 |    50.865 | 1753970 |  0.987 |      570.1
-b<original_flatmap_get> * |      30 |    53.559 | 1785312 |      - |      560.1
-b<latereturn_flatmap_get> |      30 |    47.989 | 1599643 |  0.896 |      625.1
-b<original_flatmap_get> * |      31 |    51.216 | 1652115 |      - |      605.3
-b<latereturn_flatmap_get> |      31 |    47.635 | 1536603 |  0.930 |      650.8
-b<original_flatmap_get> * |      32 |    50.990 | 1593425 |      - |      627.6
-b<latereturn_flatmap_get> |      32 |    48.204 | 1506372 |  0.945 |      663.8
+b<original_flatmap_get> * |       1 |     1.638 | 1638109 |      - |      610.5
+b<latereturn_flatmap_get> |       1 |     1.007 | 1007392 |  0.615 |      992.7
+b<original_flatmap_get> * |       2 |     1.764 |  882076 |      - |     1133.7
+b<latereturn_flatmap_get> |       2 |     1.092 |  545935 |  0.619 |     1831.7
+b<original_flatmap_get> * |       3 |     1.764 |  588048 |      - |     1700.5
+b<latereturn_flatmap_get> |       3 |     1.157 |  385696 |  0.656 |     2592.7
+b<original_flatmap_get> * |       4 |     1.884 |  471079 |      - |     2122.8
+b<latereturn_flatmap_get> |       4 |     1.278 |  319551 |  0.678 |     3129.4
+b<original_flatmap_get> * |       5 |     1.654 |  330805 |      - |     3022.9
+b<latereturn_flatmap_get> |       5 |     1.021 |  204220 |  0.617 |     4896.7
+b<original_flatmap_get> * |       6 |     1.921 |  320194 |      - |     3123.1
+b<latereturn_flatmap_get> |       6 |     1.165 |  194180 |  0.606 |     5149.8
+b<original_flatmap_get> * |       7 |     1.926 |  275072 |      - |     3635.4
+b<latereturn_flatmap_get> |       7 |     1.248 |  178272 |  0.648 |     5609.4
+b<original_flatmap_get> * |       8 |     1.863 |  232908 |      - |     4293.5
+b<latereturn_flatmap_get> |       8 |     1.288 |  161046 |  0.691 |     6209.4
+b<original_flatmap_get> * |       9 |     1.892 |  210167 |      - |     4758.1
+b<latereturn_flatmap_get> |       9 |     1.306 |  145090 |  0.690 |     6892.3
+b<original_flatmap_get> * |      10 |     2.011 |  201090 |      - |     4972.9
+b<latereturn_flatmap_get> |      10 |     1.250 |  125008 |  0.622 |     7999.4
+b<original_flatmap_get> * |      11 |     1.976 |  179657 |      - |     5566.1
+b<latereturn_flatmap_get> |      11 |     1.278 |  116225 |  0.647 |     8604.0
+b<original_flatmap_get> * |      12 |     1.782 |  148516 |      - |     6733.2
+b<latereturn_flatmap_get> |      12 |     1.529 |  127438 |  0.858 |     7847.0
+b<original_flatmap_get> * |      13 |     1.991 |  153172 |      - |     6528.6
+b<latereturn_flatmap_get> |      13 |     1.649 |  126862 |  0.828 |     7882.5
+b<original_flatmap_get> * |      14 |     2.191 |  156496 |      - |     6389.9
+b<latereturn_flatmap_get> |      14 |     1.763 |  125943 |  0.805 |     7940.0
+b<original_flatmap_get> * |      15 |     2.167 |  144440 |      - |     6923.3
+b<latereturn_flatmap_get> |      15 |     1.570 |  104689 |  0.725 |     9552.1
+b<original_flatmap_get> * |      16 |     2.050 |  128096 |      - |     7806.6
+b<latereturn_flatmap_get> |      16 |     1.733 |  108337 |  0.846 |     9230.4
+b<original_flatmap_get> * |      17 |     1.947 |  114541 |      - |     8730.5
+b<latereturn_flatmap_get> |      17 |     2.019 |  118791 |  1.037 |     8418.1
+b<original_flatmap_get> * |      18 |     2.199 |  122168 |      - |     8185.4
+b<latereturn_flatmap_get> |      18 |     1.851 |  102834 |  0.842 |     9724.4
+b<original_flatmap_get> * |      19 |     2.198 |  115690 |      - |     8643.8
+b<latereturn_flatmap_get> |      19 |     1.949 |  102563 |  0.887 |     9750.1
+b<original_flatmap_get> * |      20 |     2.090 |  104480 |      - |     9571.2
+b<latereturn_flatmap_get> |      20 |     1.878 |   93913 |  0.899 |    10648.1
+b<original_flatmap_get> * |      21 |     2.173 |  103474 |      - |     9664.2
+b<latereturn_flatmap_get> |      21 |     1.806 |   85977 |  0.831 |    11631.0
+b<original_flatmap_get> * |      22 |     2.266 |  102978 |      - |     9710.8
+b<latereturn_flatmap_get> |      22 |     1.825 |   82966 |  0.806 |    12053.1
+b<original_flatmap_get> * |      23 |     2.203 |   95797 |      - |    10438.7
+b<latereturn_flatmap_get> |      23 |     1.971 |   85686 |  0.894 |    11670.4
+b<original_flatmap_get> * |      24 |     2.442 |  101731 |      - |     9829.8
+b<latereturn_flatmap_get> |      24 |     2.045 |   85214 |  0.838 |    11735.1
+b<original_flatmap_get> * |      25 |     2.319 |   92778 |      - |    10778.4
+b<latereturn_flatmap_get> |      25 |     2.131 |   85252 |  0.919 |    11729.9
+b<original_flatmap_get> * |      26 |     2.267 |   87189 |      - |    11469.2
+b<latereturn_flatmap_get> |      26 |     2.159 |   83041 |  0.952 |    12042.2
+b<original_flatmap_get> * |      27 |     2.485 |   92019 |      - |    10867.3
+b<latereturn_flatmap_get> |      27 |     2.031 |   75237 |  0.818 |    13291.2
+b<original_flatmap_get> * |      28 |     2.351 |   83968 |      - |    11909.2
+b<latereturn_flatmap_get> |      28 |     2.277 |   81319 |  0.968 |    12297.2
+b<original_flatmap_get> * |      29 |     2.593 |   89408 |      - |    11184.6
+b<latereturn_flatmap_get> |      29 |     2.197 |   75757 |  0.847 |    13200.0
+b<original_flatmap_get> * |      30 |     2.945 |   98177 |      - |    10185.6
+b<latereturn_flatmap_get> |      30 |     2.189 |   72954 |  0.743 |    13707.3
+b<original_flatmap_get> * |      31 |     2.927 |   94434 |      - |    10589.4
+b<latereturn_flatmap_get> |      31 |     2.730 |   88080 |  0.933 |    11353.3
+b<original_flatmap_get> * |      32 |     3.068 |   95870 |      - |    10430.7
+b<latereturn_flatmap_get> |      32 |     2.426 |   75813 |  0.791 |    13190.3
 ===============================================================================
 ```
 
 ## Clang
 
-## -O2
+### -O2
+
 
 ```
 ===============================================================================
    Name (baseline is *)   |   Dim   |  Total ms |  ns/op  |Baseline| Ops/second
 ===============================================================================
-b<original_flatmap_get> * |       1 |    46.770 |46769922 |      - |       21.4
-b<latereturn_flatmap_get> |       1 |    47.079 |47079060 |  1.007 |       21.2
-b<original_flatmap_get> * |       2 |    55.057 |27528680 |      - |       36.3
-b<latereturn_flatmap_get> |       2 |    45.343 |22671299 |  0.824 |       44.1
-b<original_flatmap_get> * |       3 |    56.595 |18864985 |      - |       53.0
-b<latereturn_flatmap_get> |       3 |    44.530 |14843421 |  0.787 |       67.4
-b<original_flatmap_get> * |       4 |    59.735 |14933747 |      - |       67.0
-b<latereturn_flatmap_get> |       4 |    46.295 |11573647 |  0.775 |       86.4
-b<original_flatmap_get> * |       5 |    58.731 |11746181 |      - |       85.1
-b<latereturn_flatmap_get> |       5 |    45.822 | 9164421 |  0.780 |      109.1
-b<original_flatmap_get> * |       6 |    60.532 |10088606 |      - |       99.1
-b<latereturn_flatmap_get> |       6 |    45.646 | 7607647 |  0.754 |      131.4
-b<original_flatmap_get> * |       7 |    60.324 | 8617721 |      - |      116.0
-b<latereturn_flatmap_get> |       7 |    44.903 | 6414694 |  0.744 |      155.9
-b<original_flatmap_get> * |       8 |    63.901 | 7987623 |      - |      125.2
-b<latereturn_flatmap_get> |       8 |    48.198 | 6024798 |  0.754 |      166.0
-b<original_flatmap_get> * |       9 |    61.424 | 6824863 |      - |      146.5
-b<latereturn_flatmap_get> |       9 |    45.623 | 5069218 |  0.743 |      197.3
-b<original_flatmap_get> * |      10 |    63.081 | 6308123 |      - |      158.5
-b<latereturn_flatmap_get> |      10 |    44.532 | 4453235 |  0.706 |      224.6
-b<original_flatmap_get> * |      11 |    59.971 | 5451949 |      - |      183.4
-b<latereturn_flatmap_get> |      11 |    44.966 | 4087786 |  0.750 |      244.6
-b<original_flatmap_get> * |      12 |    59.304 | 4941972 |      - |      202.3
-b<latereturn_flatmap_get> |      12 |    46.240 | 3853370 |  0.780 |      259.5
-b<original_flatmap_get> * |      13 |    62.232 | 4787079 |      - |      208.9
-b<latereturn_flatmap_get> |      13 |    45.010 | 3462342 |  0.723 |      288.8
-b<original_flatmap_get> * |      14 |    58.288 | 4163404 |      - |      240.2
-b<latereturn_flatmap_get> |      14 |    44.783 | 3198753 |  0.768 |      312.6
-b<original_flatmap_get> * |      15 |    59.483 | 3965516 |      - |      252.2
-b<latereturn_flatmap_get> |      15 |    44.452 | 2963460 |  0.747 |      337.4
-b<original_flatmap_get> * |      16 |    57.496 | 3593507 |      - |      278.3
-b<latereturn_flatmap_get> |      16 |    44.407 | 2775416 |  0.772 |      360.3
-b<original_flatmap_get> * |      17 |    56.406 | 3318021 |      - |      301.4
-b<latereturn_flatmap_get> |      17 |    44.461 | 2615374 |  0.788 |      382.4
-b<original_flatmap_get> * |      18 |    56.097 | 3116484 |      - |      320.9
-b<latereturn_flatmap_get> |      18 |    46.290 | 2571694 |  0.825 |      388.8
-b<original_flatmap_get> * |      19 |    58.424 | 3074934 |      - |      325.2
-b<latereturn_flatmap_get> |      19 |    47.107 | 2479316 |  0.806 |      403.3
-b<original_flatmap_get> * |      20 |    55.735 | 2786748 |      - |      358.8
-b<latereturn_flatmap_get> |      20 |    45.635 | 2281740 |  0.819 |      438.3
-b<original_flatmap_get> * |      21 |    55.591 | 2647184 |      - |      377.8
-b<latereturn_flatmap_get> |      21 |    45.226 | 2153620 |  0.814 |      464.3
-b<original_flatmap_get> * |      22 |    56.256 | 2557104 |      - |      391.1
-b<latereturn_flatmap_get> |      22 |    46.333 | 2106056 |  0.824 |      474.8
-b<original_flatmap_get> * |      23 |    53.965 | 2346321 |      - |      426.2
-b<latereturn_flatmap_get> |      23 |    46.151 | 2006560 |  0.855 |      498.4
-b<original_flatmap_get> * |      24 |    52.934 | 2205577 |      - |      453.4
-b<latereturn_flatmap_get> |      24 |    45.686 | 1903595 |  0.863 |      525.3
-b<original_flatmap_get> * |      25 |    52.797 | 2111880 |      - |      473.5
-b<latereturn_flatmap_get> |      25 |    46.626 | 1865024 |  0.883 |      536.2
-b<original_flatmap_get> * |      26 |    52.425 | 2016337 |      - |      495.9
-b<latereturn_flatmap_get> |      26 |    44.951 | 1728898 |  0.857 |      578.4
-b<original_flatmap_get> * |      27 |    54.265 | 2009797 |      - |      497.6
-b<latereturn_flatmap_get> |      27 |    44.992 | 1666371 |  0.829 |      600.1
-b<original_flatmap_get> * |      28 |    52.115 | 1861245 |      - |      537.3
-b<latereturn_flatmap_get> |      28 |    44.418 | 1586341 |  0.852 |      630.4
-b<original_flatmap_get> * |      29 |    51.361 | 1771070 |      - |      564.6
-b<latereturn_flatmap_get> |      29 |    44.420 | 1531740 |  0.865 |      652.9
-b<original_flatmap_get> * |      30 |    51.906 | 1730188 |      - |      578.0
-b<latereturn_flatmap_get> |      30 |    46.362 | 1545400 |  0.893 |      647.1
-b<original_flatmap_get> * |      31 |    50.910 | 1642252 |      - |      608.9
-b<latereturn_flatmap_get> |      31 |    47.629 | 1536420 |  0.936 |      650.9
-b<original_flatmap_get> * |      32 |    50.166 | 1567685 |      - |      637.9
-b<latereturn_flatmap_get> |      32 |    45.643 | 1426359 |  0.910 |      701.1
+b<original_flatmap_get> * |       1 |     1.306 | 1305617 |      - |      765.9
+b<latereturn_flatmap_get> |       1 |     0.928 |  928389 |  0.711 |     1077.1
+b<original_flatmap_get> * |       2 |     1.461 |  730436 |      - |     1369.0
+b<latereturn_flatmap_get> |       2 |     0.935 |  467531 |  0.640 |     2138.9
+b<original_flatmap_get> * |       3 |     1.423 |  474465 |      - |     2107.6
+b<latereturn_flatmap_get> |       3 |     0.964 |  321196 |  0.677 |     3113.4
+b<original_flatmap_get> * |       4 |     1.462 |  365568 |      - |     2735.5
+b<latereturn_flatmap_get> |       4 |     1.022 |  255380 |  0.699 |     3915.7
+b<original_flatmap_get> * |       5 |     1.478 |  295600 |      - |     3382.9
+b<latereturn_flatmap_get> |       5 |     1.098 |  219565 |  0.743 |     4554.5
+b<original_flatmap_get> * |       6 |     1.509 |  251482 |      - |     3976.4
+b<latereturn_flatmap_get> |       6 |     1.116 |  185991 |  0.740 |     5376.6
+b<original_flatmap_get> * |       7 |     1.591 |  227236 |      - |     4400.7
+b<latereturn_flatmap_get> |       7 |     1.138 |  162636 |  0.716 |     6148.7
+b<original_flatmap_get> * |       8 |     1.647 |  205825 |      - |     4858.5
+b<latereturn_flatmap_get> |       8 |     1.107 |  138348 |  0.672 |     7228.1
+b<original_flatmap_get> * |       9 |     1.640 |  182221 |      - |     5487.8
+b<latereturn_flatmap_get> |       9 |     1.221 |  135614 |  0.744 |     7373.9
+b<original_flatmap_get> * |      10 |     2.015 |  201463 |      - |     4963.7
+b<latereturn_flatmap_get> |      10 |     1.255 |  125472 |  0.623 |     7969.9
+b<original_flatmap_get> * |      11 |     1.987 |  180664 |      - |     5535.1
+b<latereturn_flatmap_get> |      11 |     1.366 |  124213 |  0.688 |     8050.7
+b<original_flatmap_get> * |      12 |     1.798 |  149865 |      - |     6672.7
+b<latereturn_flatmap_get> |      12 |     1.250 |  104162 |  0.695 |     9600.4
+b<original_flatmap_get> * |      13 |     1.871 |  143905 |      - |     6949.0
+b<latereturn_flatmap_get> |      13 |     1.221 |   93950 |  0.653 |    10643.9
+b<original_flatmap_get> * |      14 |     1.821 |  130089 |      - |     7687.0
+b<latereturn_flatmap_get> |      14 |     1.250 |   89300 |  0.686 |    11198.2
+b<original_flatmap_get> * |      15 |     1.809 |  120610 |      - |     8291.2
+b<latereturn_flatmap_get> |      15 |     1.307 |   87154 |  0.723 |    11473.9
+b<original_flatmap_get> * |      16 |     1.887 |  117922 |      - |     8480.2
+b<latereturn_flatmap_get> |      16 |     1.281 |   80034 |  0.679 |    12494.6
+b<original_flatmap_get> * |      17 |     1.844 |  108480 |      - |     9218.3
+b<latereturn_flatmap_get> |      17 |     1.377 |   80988 |  0.747 |    12347.4
+b<original_flatmap_get> * |      18 |     1.861 |  103406 |      - |     9670.5
+b<latereturn_flatmap_get> |      18 |     1.431 |   79522 |  0.769 |    12575.0
+b<original_flatmap_get> * |      19 |     1.883 |   99079 |      - |    10092.9
+b<latereturn_flatmap_get> |      19 |     1.647 |   86678 |  0.875 |    11536.9
+b<original_flatmap_get> * |      20 |     2.023 |  101147 |      - |     9886.5
+b<latereturn_flatmap_get> |      20 |     1.460 |   72980 |  0.722 |    13702.3
+b<original_flatmap_get> * |      21 |     1.938 |   92276 |      - |    10837.0
+b<latereturn_flatmap_get> |      21 |     1.508 |   71807 |  0.778 |    13926.1
+b<original_flatmap_get> * |      22 |     2.075 |   94319 |      - |    10602.2
+b<latereturn_flatmap_get> |      22 |     1.588 |   72203 |  0.766 |    13849.8
+b<original_flatmap_get> * |      23 |     2.350 |  102182 |      - |     9786.4
+b<latereturn_flatmap_get> |      23 |     1.773 |   77106 |  0.755 |    12969.1
+b<original_flatmap_get> * |      24 |     2.016 |   84012 |      - |    11903.0
+b<latereturn_flatmap_get> |      24 |     1.566 |   65241 |  0.777 |    15327.7
+b<original_flatmap_get> * |      25 |     2.140 |   85586 |      - |    11684.2
+b<latereturn_flatmap_get> |      25 |     1.688 |   67522 |  0.789 |    14809.9
+b<original_flatmap_get> * |      26 |     2.110 |   81154 |      - |    12322.3
+b<latereturn_flatmap_get> |      26 |     1.680 |   64611 |  0.796 |    15477.1
+b<original_flatmap_get> * |      27 |     2.131 |   78927 |      - |    12669.9
+b<latereturn_flatmap_get> |      27 |     1.738 |   64352 |  0.815 |    15539.3
+b<original_flatmap_get> * |      28 |     2.176 |   77714 |      - |    12867.6
+b<latereturn_flatmap_get> |      28 |     1.746 |   62362 |  0.802 |    16035.2
+b<original_flatmap_get> * |      29 |     2.195 |   75682 |      - |    13213.1
+b<latereturn_flatmap_get> |      29 |     1.795 |   61884 |  0.818 |    16159.3
+b<original_flatmap_get> * |      30 |     2.170 |   72334 |      - |    13824.6
+b<latereturn_flatmap_get> |      30 |     1.824 |   60787 |  0.840 |    16450.7
+b<original_flatmap_get> * |      31 |     2.438 |   78644 |      - |    12715.4
+b<latereturn_flatmap_get> |      31 |     2.066 |   66640 |  0.847 |    15005.8
+b<original_flatmap_get> * |      32 |     2.519 |   78716 |      - |    12703.9
+b<latereturn_flatmap_get> |      32 |     1.852 |   57880 |  0.735 |    17277.1
 ===============================================================================
 ```
 
-## -O3
+### -O3
 
 ```
 ===============================================================================
    Name (baseline is *)   |   Dim   |  Total ms |  ns/op  |Baseline| Ops/second
 ===============================================================================
-b<original_flatmap_get> * |       1 |    44.550 |44550364 |      - |       22.4
-b<latereturn_flatmap_get> |       1 |    48.114 |48113963 |  1.080 |       20.8
-b<original_flatmap_get> * |       2 |    51.308 |25653960 |      - |       39.0
-b<latereturn_flatmap_get> |       2 |    46.015 |23007446 |  0.897 |       43.5
-b<original_flatmap_get> * |       3 |    51.937 |17312202 |      - |       57.8
-b<latereturn_flatmap_get> |       3 |    45.513 |15171084 |  0.876 |       65.9
-b<original_flatmap_get> * |       4 |    55.436 |13858890 |      - |       72.2
-b<latereturn_flatmap_get> |       4 |    45.146 |11286623 |  0.814 |       88.6
-b<original_flatmap_get> * |       5 |    56.980 |11396079 |      - |       87.7
-b<latereturn_flatmap_get> |       5 |    47.670 | 9534099 |  0.837 |      104.9
-b<original_flatmap_get> * |       6 |    55.744 | 9290604 |      - |      107.6
-b<latereturn_flatmap_get> |       6 |    47.407 | 7901129 |  0.850 |      126.6
-b<original_flatmap_get> * |       7 |    57.951 | 8278669 |      - |      120.8
-b<latereturn_flatmap_get> |       7 |    45.071 | 6438646 |  0.778 |      155.3
-b<original_flatmap_get> * |       8 |    59.488 | 7436057 |      - |      134.5
-b<latereturn_flatmap_get> |       8 |    45.051 | 5631414 |  0.757 |      177.6
-b<original_flatmap_get> * |       9 |    59.512 | 6612438 |      - |      151.2
-b<latereturn_flatmap_get> |       9 |    45.250 | 5027814 |  0.760 |      198.9
-b<original_flatmap_get> * |      10 |    58.285 | 5828527 |      - |      171.6
-b<latereturn_flatmap_get> |      10 |    45.396 | 4539564 |  0.779 |      220.3
-b<original_flatmap_get> * |      11 |    57.873 | 5261143 |      - |      190.1
-b<latereturn_flatmap_get> |      11 |    44.588 | 4053458 |  0.770 |      246.7
-b<original_flatmap_get> * |      12 |    58.260 | 4854964 |      - |      206.0
-b<latereturn_flatmap_get> |      12 |    48.497 | 4041418 |  0.832 |      247.4
-b<original_flatmap_get> * |      13 |    57.951 | 4457792 |      - |      224.3
-b<latereturn_flatmap_get> |      13 |    45.105 | 3469604 |  0.778 |      288.2
-b<original_flatmap_get> * |      14 |    59.276 | 4233997 |      - |      236.2
-b<latereturn_flatmap_get> |      14 |    46.210 | 3300732 |  0.780 |      303.0
-b<original_flatmap_get> * |      15 |    56.763 | 3784173 |      - |      264.3
-b<latereturn_flatmap_get> |      15 |    46.416 | 3094412 |  0.818 |      323.2
-b<original_flatmap_get> * |      16 |    57.980 | 3623744 |      - |      276.0
-b<latereturn_flatmap_get> |      16 |    47.381 | 2961290 |  0.817 |      337.7
-b<original_flatmap_get> * |      17 |    55.287 | 3252162 |      - |      307.5
-b<latereturn_flatmap_get> |      17 |    44.898 | 2641043 |  0.812 |      378.6
-b<original_flatmap_get> * |      18 |    53.983 | 2999028 |      - |      333.4
-b<latereturn_flatmap_get> |      18 |    45.237 | 2513183 |  0.838 |      397.9
-b<original_flatmap_get> * |      19 |    53.759 | 2829437 |      - |      353.4
-b<latereturn_flatmap_get> |      19 |    45.336 | 2386086 |  0.843 |      419.1
-b<original_flatmap_get> * |      20 |    53.021 | 2651044 |      - |      377.2
-b<latereturn_flatmap_get> |      20 |    45.795 | 2289730 |  0.864 |      436.7
-b<original_flatmap_get> * |      21 |    52.298 | 2490403 |      - |      401.5
-b<latereturn_flatmap_get> |      21 |    47.028 | 2239451 |  0.899 |      446.5
-b<original_flatmap_get> * |      22 |    54.781 | 2490058 |      - |      401.6
-b<latereturn_flatmap_get> |      22 |    45.306 | 2059360 |  0.827 |      485.6
-b<original_flatmap_get> * |      23 |    51.684 | 2247140 |      - |      445.0
-b<latereturn_flatmap_get> |      23 |    45.560 | 1980855 |  0.882 |      504.8
-b<original_flatmap_get> * |      24 |    52.354 | 2181434 |      - |      458.4
-b<latereturn_flatmap_get> |      24 |    44.741 | 1864213 |  0.855 |      536.4
-b<original_flatmap_get> * |      25 |    52.909 | 2116362 |      - |      472.5
-b<latereturn_flatmap_get> |      25 |    45.727 | 1829083 |  0.864 |      546.7
-b<original_flatmap_get> * |      26 |    50.554 | 1944395 |      - |      514.3
-b<latereturn_flatmap_get> |      26 |    44.848 | 1724911 |  0.887 |      579.7
-b<original_flatmap_get> * |      27 |    50.692 | 1877484 |      - |      532.6
-b<latereturn_flatmap_get> |      27 |    45.017 | 1667306 |  0.888 |      599.8
-b<original_flatmap_get> * |      28 |    55.383 | 1977965 |      - |      505.6
-b<latereturn_flatmap_get> |      28 |    47.286 | 1688776 |  0.854 |      592.1
-b<original_flatmap_get> * |      29 |    49.792 | 1716960 |      - |      582.4
-b<latereturn_flatmap_get> |      29 |    45.467 | 1567820 |  0.913 |      637.8
-b<original_flatmap_get> * |      30 |    51.587 | 1719561 |      - |      581.5
-b<latereturn_flatmap_get> |      30 |    48.422 | 1614067 |  0.939 |      619.6
-b<original_flatmap_get> * |      31 |    50.444 | 1627220 |      - |      614.5
-b<latereturn_flatmap_get> |      31 |    47.782 | 1541349 |  0.947 |      648.8
-b<original_flatmap_get> * |      32 |    49.033 | 1532295 |      - |      652.6
-b<latereturn_flatmap_get> |      32 |    45.570 | 1424053 |  0.929 |      702.2
+b<original_flatmap_get> * |       1 |     1.458 | 1457689 |      - |      686.0
+b<latereturn_flatmap_get> |       1 |     0.914 |  913534 |  0.627 |     1094.7
+b<original_flatmap_get> * |       2 |     1.602 |  800821 |      - |     1248.7
+b<latereturn_flatmap_get> |       2 |     0.942 |  471119 |  0.588 |     2122.6
+b<original_flatmap_get> * |       3 |     1.435 |  478475 |      - |     2090.0
+b<latereturn_flatmap_get> |       3 |     1.164 |  388036 |  0.811 |     2577.1
+b<original_flatmap_get> * |       4 |     1.576 |  394080 |      - |     2537.6
+b<latereturn_flatmap_get> |       4 |     1.073 |  268206 |  0.681 |     3728.5
+b<original_flatmap_get> * |       5 |     1.570 |  314007 |      - |     3184.6
+b<latereturn_flatmap_get> |       5 |     1.105 |  221031 |  0.704 |     4524.2
+b<original_flatmap_get> * |       6 |     1.550 |  258348 |      - |     3870.7
+b<latereturn_flatmap_get> |       6 |     1.085 |  180893 |  0.700 |     5528.1
+b<original_flatmap_get> * |       7 |     1.550 |  221380 |      - |     4517.1
+b<latereturn_flatmap_get> |       7 |     1.143 |  163243 |  0.737 |     6125.8
+b<original_flatmap_get> * |       8 |     1.519 |  189832 |      - |     5267.8
+b<latereturn_flatmap_get> |       8 |     1.139 |  142344 |  0.750 |     7025.2
+b<original_flatmap_get> * |       9 |     1.675 |  186101 |      - |     5373.4
+b<latereturn_flatmap_get> |       9 |     1.355 |  150525 |  0.809 |     6643.4
+b<original_flatmap_get> * |      10 |     1.689 |  168872 |      - |     5921.6
+b<latereturn_flatmap_get> |      10 |     1.257 |  125715 |  0.744 |     7954.5
+b<original_flatmap_get> * |      11 |     1.658 |  150755 |      - |     6633.3
+b<latereturn_flatmap_get> |      11 |     1.406 |  127801 |  0.848 |     7824.6
+b<original_flatmap_get> * |      12 |     1.934 |  161181 |      - |     6204.2
+b<latereturn_flatmap_get> |      12 |     1.381 |  115122 |  0.714 |     8686.4
+b<original_flatmap_get> * |      13 |     1.679 |  129159 |      - |     7742.3
+b<latereturn_flatmap_get> |      13 |     1.229 |   94508 |  0.732 |    10581.1
+b<original_flatmap_get> * |      14 |     1.819 |  129916 |      - |     7697.3
+b<latereturn_flatmap_get> |      14 |     1.449 |  103526 |  0.797 |     9659.3
+b<original_flatmap_get> * |      15 |     2.012 |  134106 |      - |     7456.7
+b<latereturn_flatmap_get> |      15 |     1.429 |   95277 |  0.710 |    10495.7
+b<original_flatmap_get> * |      16 |     1.961 |  122590 |      - |     8157.2
+b<latereturn_flatmap_get> |      16 |     1.365 |   85307 |  0.696 |    11722.3
+b<original_flatmap_get> * |      17 |     2.063 |  121370 |      - |     8239.2
+b<latereturn_flatmap_get> |      17 |     1.372 |   80701 |  0.665 |    12391.3
+b<original_flatmap_get> * |      18 |     1.930 |  107244 |      - |     9324.5
+b<latereturn_flatmap_get> |      18 |     1.574 |   87450 |  0.815 |    11435.0
+b<original_flatmap_get> * |      19 |     1.884 |   99182 |      - |    10082.5
+b<latereturn_flatmap_get> |      19 |     1.487 |   78239 |  0.789 |    12781.3
+b<original_flatmap_get> * |      20 |     2.116 |  105790 |      - |     9452.6
+b<latereturn_flatmap_get> |      20 |     1.430 |   71484 |  0.676 |    13989.1
+b<original_flatmap_get> * |      21 |     1.988 |   94648 |      - |    10565.4
+b<latereturn_flatmap_get> |      21 |     1.557 |   74165 |  0.784 |    13483.3
+b<original_flatmap_get> * |      22 |     2.013 |   91510 |      - |    10927.7
+b<latereturn_flatmap_get> |      22 |     1.753 |   79669 |  0.871 |    12551.9
+b<original_flatmap_get> * |      23 |     1.986 |   86367 |      - |    11578.4
+b<latereturn_flatmap_get> |      23 |     1.604 |   69735 |  0.807 |    14339.8
+b<original_flatmap_get> * |      24 |     2.309 |   96220 |      - |    10392.8
+b<latereturn_flatmap_get> |      24 |     1.610 |   67065 |  0.697 |    14910.8
+b<original_flatmap_get> * |      25 |     2.120 |   84794 |      - |    11793.2
+b<latereturn_flatmap_get> |      25 |     1.658 |   66335 |  0.782 |    15074.8
+b<original_flatmap_get> * |      26 |     2.446 |   94090 |      - |    10628.1
+b<latereturn_flatmap_get> |      26 |     1.830 |   70392 |  0.748 |    14206.1
+b<original_flatmap_get> * |      27 |     2.148 |   79545 |      - |    12571.4
+b<latereturn_flatmap_get> |      27 |     1.745 |   64615 |  0.812 |    15476.2
+b<original_flatmap_get> * |      28 |     2.348 |   83871 |      - |    11923.0
+b<latereturn_flatmap_get> |      28 |     1.981 |   70759 |  0.844 |    14132.4
+b<original_flatmap_get> * |      29 |     2.187 |   75416 |      - |    13259.8
+b<latereturn_flatmap_get> |      29 |     1.837 |   63357 |  0.840 |    15783.5
+b<original_flatmap_get> * |      30 |     2.244 |   74802 |      - |    13368.6
+b<latereturn_flatmap_get> |      30 |     1.970 |   65667 |  0.878 |    15228.3
+b<original_flatmap_get> * |      31 |     2.617 |   84424 |      - |    11844.9
+b<latereturn_flatmap_get> |      31 |     1.888 |   60904 |  0.721 |    16419.1
+b<original_flatmap_get> * |      32 |     2.417 |   75518 |      - |    13241.8
+b<latereturn_flatmap_get> |      32 |     1.916 |   59881 |  0.793 |    16699.6
 ===============================================================================
 ```
